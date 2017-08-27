@@ -46,6 +46,12 @@ app.get('/about', (req, res) => {
         pageTitle: 'About Page'
     }); //render templates
 });
+app.get('/projects', (req, res) => {
+    //res.send('About Page');
+    res.render('projects.hbs', {
+        pageTitle: 'Projects'
+    }); //render templates
+});
 
 
 // /bad - send back json with errorMessage
